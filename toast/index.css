@@ -1,0 +1,31 @@
+.main-div{
+    background-color: beige;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.toast-block{
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    padding: 12px;
+    border: 1px solid black;
+    display: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: cornsilk;
+    -webkit-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 10%; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 10%; opacity: 1;}
+  }
